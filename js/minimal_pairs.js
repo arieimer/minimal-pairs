@@ -138,7 +138,12 @@ function update_answer_buttons(json_data, correct_answer_index) {
         } else {
             graded_answer_button_row_wrapper.innerHTML = button_sound_player + '<button type="button" class="btn btn-danger">' + entry + '</button>';
         }
-        graded_answer_button_row_wrapper.addEventListener("click", () => {document.getElementById("audio_index_" + index).play()})
+        graded_answer_button_row_wrapper.addEventListener("click", () => {
+            const audio_player = document.getElementById("audio_index_" + index);
+            audio_player.pause();
+            audio_player.currentTime = 0;
+            audio_player.play();
+        });
 
         graded_answer_button_row.classList.add("element-hidden");
         graded_answer_button_row.appendChild(graded_answer_button_row_wrapper);
