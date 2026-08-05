@@ -34,6 +34,8 @@ A backup of the コツ minimal pairs test. The original [minimal pairs test](htt
 
 - `Pause After Corrent Answer`: Disables automatically advancing to the next pair after a correct answer is submitted.
 
+- `Play Corresponding Audio on Incorrect Answers`: Plays the audio of what was clicked when incorrect answers are submitted.
+
 - `Add white noise`: Adds white noise to the audio, making it tougher to hear.
 
 - `Muffle audio`: Muffles the audio, making it harder to hear.
